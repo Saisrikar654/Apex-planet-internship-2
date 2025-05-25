@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Intermediate Web Dev</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#contact">Contact Form</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+                <li><a href="#grid">Grid Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section id="contact" class="section">
+            <h2>Contact Form</h2>
+            <form id="contactForm" class="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <section id="todo" class="section">
+            <h2>To-Do List</h2>
+            <div class="todo-container">
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Add a new task...">
+                    <button id="addTodoBtn" class="add-btn">Add</button>
+                </div>
+                <ul id="todoList" class="todo-list"></ul>
+            </div>
+        </section>
+
+        <section id="grid" class="section">
+            <h2>Responsive Grid Layout</h2>
+            <div class="grid-container">
+                <div class="grid-item item1">Header</div>
+                <div class="grid-item item2">Sidebar</div>
+                <div class="grid-item item3">Main Content</div>
+                <div class="grid-item item4">Extra Content</div>
+                <div class="grid-item item5">Footer</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Intermediate Web Development</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
