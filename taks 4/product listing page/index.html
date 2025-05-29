@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Products</h1>
+
+    <div class="controls">
+        <!-- Add inside .controls (after the select elements) -->
+<input type="text" id="search-input" placeholder="Search products..." />
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="books">Books</option>
+      </select>
+
+      <select id="sort-by">
+        <option value="default">Sort By</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: High to Low</option>
+      </select>
+    </div>
+
+    <div id="product-list" class="product-grid"></div>
+    <!-- After the #product-list div -->
+<div id="pagination" class="pagination"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
