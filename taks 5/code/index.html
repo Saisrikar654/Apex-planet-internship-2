@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My E-Commerce Site</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="search-bar" placeholder="Search products..." onkeyup="searchProducts()">
+  </header>
+
+  <main>
+    <section id="featured">
+      <h2>Featured Products</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&h=200" alt="Smartphone">
+          <h3>Premium Smartphone</h3>
+          <p>Price: $500</p>
+          <button onclick="addToCart('Smartphone', 500)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&h=200" alt="Jacket">
+          <h3>Winter Jacket</h3>
+          <p>Price: $80</p>
+          <button onclick="addToCart('Jacket', 80)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>

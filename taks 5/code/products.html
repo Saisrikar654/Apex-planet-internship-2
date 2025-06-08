@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Products</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="search-bar" placeholder="Search products..." onkeyup="searchProducts()">
+    <select id="filter-category" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+    </select>
+  </header>
+
+  <main>
+    <section id="product-list">
+      <div class="product" data-category="electronics">
+        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p>Price: $500</p>
+        <button onclick="addToCart('Smartphone', 500)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="clothing">
+        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200" alt="Jacket">
+        <h3>Jacket</h3>
+        <p>Price: $80</p>
+        <button onclick="addToCart('Jacket', 80)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="books">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200" alt="Programming Book">
+        <h3>Programming Book</h3>
+        <p>Price: $30</p>
+        <button onclick="addToCart('Programming Book', 30)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=200" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Price: $150</p>
+        <button onclick="addToCart('Headphones', 150)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
